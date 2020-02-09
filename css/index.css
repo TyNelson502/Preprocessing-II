@@ -1,3 +1,8 @@
+.aligncenter {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -175,10 +180,10 @@ header {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
-  font-size: 2rem;
-  border-bottom: 2px dotted grey;
-  padding-bottom: 1rem;
-  padding-top: 2rem;
+  font-size: 12pt;
+  border-bottom: 2px dashed #C0C0C0;
+  padding: 3rem 0;
+  font-weight: 600;
 }
 header a {
   text-decoration: none;
@@ -195,6 +200,14 @@ header a {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home .bus-section {
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.home .bus-image {
+  margin-bottom: 2rem;
 }
 .home .content-section {
   margin: 30px 0;
@@ -241,4 +254,56 @@ header a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .btn {
+  display: block;
+  background-color: #17A2B8;
+  margin: 0 auto;
+  cursor: pointer;
+  width: 80%;
+  height: 3.7rem;
+  font-size: 12pt;
+  border-radius: 2rem;
+  color: white;
+  text-align: center;
+  padding-top: 1rem;
+  margin-right: 5rem;
+}
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+  }
+  .bus-section {
+    text-align: center;
+  }
+  .content-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .content-destination {
+    text-align: center;
+  }
+  .content-pick {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  div {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+  }
+  .btn {
+    display: block;
+    background-color: #17A2B8;
+    margin: 0 auto;
+    cursor: pointer;
+    width: 40%;
+    height: 3.7rem;
+    font-size: 12pt;
+    border-radius: 2rem;
+    color: white;
+    text-align: center;
+    padding-top: 1rem;
+  }
 }
